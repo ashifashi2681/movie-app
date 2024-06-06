@@ -1,0 +1,39 @@
+.head-container{
+    position: relative;
+    height: 13rem;
+    display: grid;
+    place-content: center;
+    z-index: 1;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-block: 1rem;
+}
+.head-container>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* 320px — 480px for mobile devices
+481px — 768px for iPads & tablets
+769px — 1024px for small screens like laptop
+1025px — 1200px for large screens like Desktops */
+
+@media (max-width:1024px) {
+    .head-container{
+        height: 12rem;
+    }
+}
+@media (max-width:768px) {
+    .head-container{
+        height: 10rem;
+    }
+}
+@media (max-width:480px) {
+    .head-container{
+        height: 8rem;
+    }
+}

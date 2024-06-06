@@ -1,0 +1,78 @@
+.filter-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	background: var(--dry);
+	margin-block: 2rem;
+	padding: 1.5rem;
+	border: 1px solid var(--border);
+	border-radius: 0.4rem;
+	gap: 1.4rem;
+}
+.list-box {
+	position: relative;
+}
+.listbox-btn {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	background: var(--main);
+	color: white;
+	border: none;
+	padding: 0.8rem;
+	border: 1px solid var(--border);
+	border-radius: 0.4rem 0.4rem 0 0;
+}
+.listbox-options {
+	position: absolute;
+	width: 100%;
+	background: rgb(255, 255, 255);
+	max-height: 15rem;
+	overflow: auto;
+	z-index: 1;
+	border-radius: 0 0 0.3rem 0.3rem;
+    border: 1px solid var(--border);
+}
+.listbox-option {
+	color: black;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.9rem;
+	padding: 0.5rem 1rem;
+	transition: 0.2s;
+	cursor: pointer;
+	font-weight: 500;
+}
+.listbox-option:hover {
+	background: var(--subMain);
+	color: white;
+}
+.transition {
+	transition: 0.3s linear;
+}
+.opacity-100 {
+	opacity: 1;
+}
+.opacity-0 {
+	opacity: 0;
+}
+
+/* 320px — 480px for mobile devices
+481px — 768px for iPads & tablets
+769px — 1024px for small screens like laptop
+1025px — 1200px for large screens like Desktops */
+
+@media (max-width: 768px) {
+	.filter-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width: 480px) {
+	.filter-container {
+		grid-template-columns: none;
+		gap: 0.5rem;
+		padding: 0.5rem;
+	}
+}

@@ -1,0 +1,45 @@
+
+.slider-img {
+	width: 100%;
+	height: 14rem;
+	cursor: grab;
+	position: relative;
+	outline: none;
+}
+.slider-img > img:nth-child(1) {
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+	filter: blur(4rem);
+}
+.slider-img > img:nth-child(2) {
+	width: 13rem;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	right: 10%;
+	object-fit: cover;
+	box-shadow: 1px 1px 9px 1px rgba(0, 0, 0, 0.479);
+}
+.slider-contents {
+	position: absolute;
+	top: 50%;
+    transform: translateY(-50%);
+	left: 10%;
+	color: white;
+}
+
+
+/* 320px — 480px for mobile devices
+481px — 768px for iPads & tablets
+769px — 1024px for small screens like laptop
+1025px — 1200px for large screens like Desktops */
+@media (max-width:768px) {
+	.slider-img{
+		height: 12rem;
+	}
+	.slider-img > img:nth-child(2){
+		width: 11rem;
+	}
+}

@@ -1,0 +1,84 @@
+.about-container {
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.about-grid {
+	display: flex;
+	gap: 1rem;
+	margin-block: 2rem;
+}
+.about-grid > * {
+	flex: 1;
+}
+.about-contents {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+}
+.about-contents > p {
+	color: var(--text);
+	line-height: 1.9;
+	font-size: 0.9rem;
+}
+.about-cards {
+	display: flex;
+	gap: 1rem;
+}
+.about-cards > * {
+	flex: 1;
+}
+.about-cards div {
+	background: var(--dry);
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.about-cards div > span:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.about-cards div > span:nth-child(2){
+    font-weight: 600;
+}
+.about-cards div >p{
+    font-size: .9rem;
+    color: var(--text);
+    line-height: 1.4;
+}
+.about-img {
+	width: 100%;
+	border-radius: 1rem;
+	overflow: hidden;
+    display: grid;
+    place-content: center;
+    /* background: red; */
+}
+.about-img > img {
+    width: 100%;
+    /* height: 80vh; */
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+/* 320px — 480px for mobile devices
+481px — 768px for iPads & tablets
+769px — 1024px for small screens like laptop
+1025px — 1200px for large screens like Desktops */
+
+@media (max-width: 768px) {
+    .about-grid{
+        flex-direction: column;
+    }
+    .about-img > img{
+        height: auto;
+    }
+}
+@media (max-width: 480px){
+    .about-cards{
+        flex-direction: column;
+    }
+}

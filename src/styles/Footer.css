@@ -1,0 +1,50 @@
+.footer-container{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: .9rem;
+    margin: 1rem 0;
+}
+.footer-links>*{
+    text-decoration: none;
+    color: var(--text);
+    font-size: .9rem;
+    transition: .3s;
+}
+.footer-links>*:hover{
+    color: var(--subMain);
+}
+.f-logo>img{
+    width: 8rem;
+}
+.f-logo>p{
+    color: var(--text);
+    margin:0.8rem 0;
+    font-size: .9rem;
+}
+
+/* 320px — 480px for mobile devices
+481px — 768px for iPads & tablets
+769px — 1024px for small screens like laptop
+1025px — 1200px for large screens like Desktops */
+
+@media (max-width:768px) {
+    .footer-grid{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
+@media (max-width:480px){
+     .footer-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

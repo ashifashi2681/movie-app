@@ -1,0 +1,40 @@
+.movie-container{
+    position: relative;
+    border: 2px solid var(--border);
+    border-radius: .4rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s;
+}
+.movie-container:hover{
+    border: 2px solid var(--subMain);
+}
+.movie-container img{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+    padding: 3px;
+}
+.movie-container>div{
+    position: absolute;
+    bottom: 0;
+    background: #00000083;
+    color: white;
+    width: 100%;
+    padding: 0.8rem;
+}
+.movie-container>div>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.movie-container>div>div>span:nth-child(1){
+    font-weight: 600;
+}
+.movie-container>div>div>span:nth-child(2){
+    background: var(--subMain);
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}

@@ -1,0 +1,52 @@
+.flex-movie-items{
+    margin: 1rem 0;
+    cursor: default;
+}
+.flex-movie-detials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.flex-movie-detials>div{
+    display: flex;
+    align-items: start;
+    gap: .5rem;
+}
+.flex-movie-detials span{
+    font-size: .9rem;
+}
+.f-m-icon{
+    color: var(--subMain);
+    display: flex;
+}
+.f-m-btns{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.f-m-btns>*{
+    text-decoration: none;
+}
+.f-m-btns span:nth-child(1){
+    color: white;
+    background: var(--subMain);
+    font-size: .9rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.f-m-btns span:nth-child(2){
+    background: #a2a2a2ce;
+    width: 1.9rem;
+    height: 1.9rem;
+    padding: 0.5rem;
+    display: grid;
+    place-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.f-m-btns span:nth-child(2):hover{
+    background: var(--subMain);
+}

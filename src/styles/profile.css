@@ -1,0 +1,64 @@
+.upload-container{
+    width: 100%;
+    border: 1px dashed var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    padding: 1rem;
+    background: var(--main);
+    margin-block: 1rem;
+    cursor: pointer;
+}
+.upload-container>span{
+    color: var(--subMain);
+    font-size: 1.3rem;
+}
+.upload-container>p{
+    font-weight: 600;
+}
+.upload-container>em{
+    color: var(--text);
+    font-size: .8rem;
+}
+
+.profile-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.profile-form > label {
+    color: var(--text);
+    font-size: .8rem;
+    margin-bottom: .4rem;
+}
+.profile-form > input {
+    padding: .8rem;
+    margin-bottom: 1rem;
+    background: var(--main);
+    border: none;
+    border-bottom: 1px solid var(--border);
+    outline: none;
+    color: white;
+    border-radius: .3rem;
+}
+.profile-form-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .5rem;
+}
+.profile-form-btn > * {
+    padding: .5rem 1rem;
+    border: 1px solid var(--subMain);
+    background: var(--subMain);
+    color: white;
+    font-weight: 600;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.profile-form-btn > *:hover{
+    background: var(--main);
+}

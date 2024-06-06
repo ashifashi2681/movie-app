@@ -1,0 +1,40 @@
+.dashboard-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-block: .5rem;
+}
+
+.d-card{
+    background: var(--main);
+    color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+
+.d-card > span {
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.d-card:nth-child(1) > span{
+    background: red;
+}
+.d-card:nth-child(2) > span{
+    background: green;
+}
+.d-card:nth-child(3) > span{
+    background: blue;
+}
+
+.d-card > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+    font-weight: 500;
+}

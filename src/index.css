@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	-webkit-tap-highlight-color: transparent;
+}
+
+:root {
+	--main: #080a1a;
+	--subMain: #f20000;
+	--dry: #040a30;
+	--text: #8b8b8b;
+	--border: #4b5563;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+
+/* 320px — 480px for mobile devices
+481px — 768px for iPads & tablets
+769px — 1024px for small screens like laptop
+1025px — 1200px for large screens like Desktops */

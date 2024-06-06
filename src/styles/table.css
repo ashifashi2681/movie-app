@@ -1,0 +1,87 @@
+.table-container {
+	overflow: hidden;
+	overflow: scroll;
+	height: 100vh;
+	white-space: nowrap;
+}
+.table {
+	width: 100%;
+	background: var(--main);
+	margin-top: 2rem;
+	border: 1px solid var(--border);
+	table-layout: auto;
+	border-collapse: collapse;
+}
+
+.t-h-row {
+	background: rgb(250, 223, 223);
+	color: black;
+}
+.t-h-row > * {
+	font-size: 0.7rem;
+	text-align: left;
+	font-weight: 800;
+	padding: 0.7rem 0.5rem;
+	text-transform: uppercase;
+}
+.t-b-row {
+}
+.t-b-row > * {
+	padding: 0.5rem;
+	font-size: 0.8rem;
+	border-bottom: 1px solid var(--border);
+}
+.t-d-img {
+	width: 1rem;
+	overflow: hidden;
+	aspect-ratio: 1;
+}
+.t-d-img > img {
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+	border: 1px solid var(--border);
+	padding: 0.2rem;
+	border-radius: 0.2rem;
+}
+
+.t-b-edit {
+	background: var(--main);
+	border: 1px solid var(--border);
+	border-radius: 0.2rem;
+	color: var(--text);
+	cursor: pointer;
+	padding: 0.3rem;
+}
+.t-b-edit > span {
+	color: greenyellow;
+	padding: 0.2rem;
+}
+.t-b-download {
+	background: var(--main);
+	border: 1px solid var(--border);
+	border-radius: 0.2rem;
+	color: var(--text);
+	cursor: pointer;
+	padding: 0.3rem;
+}
+.t-b-download > span {
+	color: greenyellow;
+	padding: 0.2rem;
+}
+.t-b-delete {
+	padding: 0.3rem;
+	border-radius: 0.2rem;
+	cursor: pointer;
+	background: var(--subMain);
+	color: white;
+	border: none;
+}
+.t-b-view {
+	padding: 0.3rem;
+	border-radius: 0.2rem;
+	cursor: pointer;
+	background: var(--subMain);
+	color: white;
+	border: none;
+}

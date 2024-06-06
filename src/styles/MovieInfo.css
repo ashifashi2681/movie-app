@@ -1,0 +1,159 @@
+.m-i-container {
+	display: flex;
+	gap: 2rem;
+	width: 95%;
+	max-width: 1200px;
+	margin: 2rem auto;
+}
+.m-i-img {
+	flex: 1;
+	/* height: rem; */
+	object-fit: cover;
+	border-radius: 0.5rem;
+	border: 2px solid var(--border);
+	overflow: hidden;
+}
+.m-i-img > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.m-i-details {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2rem;
+}
+.m-i-hd {
+	background: var(--subMain);
+	padding: 0.2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 0.1rem;
+}
+.m-i-details > p {
+	font-size: 0.9rem;
+	color: var(--text);
+	line-height: 1.5;
+}
+.m-i-share {
+	border: 1px solid var(--border);
+	border-radius: 0.4rem;
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+	align-items: center;
+	width: 90%;
+}
+.m-i-share > span:nth-child(1) {
+	background: rgb(114, 113, 113);
+	padding: 0.5rem;
+	display: flex;
+	border-radius: 0.4rem;
+	position: relative;
+}
+.m-i-share > span:nth-child(1)::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -20px;
+	width: 1px;
+	height: 100%;
+	background: rgb(114, 113, 113);
+}
+.m-i-share > span:nth-child(2) {
+	font-size: 0.9rem;
+	font-weight: 600;
+	white-space: nowrap;
+}
+.m-i-share  button {
+	border: 2px solid var(--subMain);
+	border-radius: 3rem;
+	padding: 0.5rem 2rem;
+	background: var(--main);
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	cursor: pointer;
+}
+.m-i-share  button > span {
+	display: flex;
+}
+.m-i-btn {
+	flex: 1;
+	display: grid;
+	place-content: center;
+}
+.m-i-btn > button {
+	width: 4rem;
+	height: 12rem;
+	writing-mode: vertical-lr;
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+	align-items: center;
+	padding: 0.5rem;
+	letter-spacing: 0.3rem;
+	text-transform: uppercase;
+	border-radius: 0.5rem;
+	border: 2px solid var(--border);
+	background: var(--main);
+	color: var(--subMain);
+	cursor: pointer;
+	transition: 0.3s linear;
+	font-weight: 600;
+}
+.m-i-btn > button:hover {
+	background: var(--subMain);
+	color: white;
+	border: 2px solid var(--subMain);
+}
+.m-i-btn > button > span {
+	font-size: 1.1rem;
+	width: 1rem;
+	height: 1rem;
+	display: grid;
+}
+
+@media (max-width: 900px) {
+	.m-i-container {
+		gap: 1rem;
+		position: relative;
+	}
+	.m-i-btn > button {
+		transform: scale(0.9);
+	}
+	.m-i-share {
+		width: 100%;
+		padding: 1rem;
+	}
+}
+@media (max-width: 786px) {
+	.m-i-btn {
+		position: absolute;
+		bottom: 0;
+	}
+	.m-i-btn > button {
+		writing-mode: horizontal-tb;
+		height: 3rem;
+		width: 12rem;
+	}
+}
+@media (max-width: 480px) {
+	.m-i-container {
+		flex-direction: column;
+	}
+	.m-i-img {
+		position: relative;
+	}
+	.m-i-btn {
+		position: absolute;
+		top: 10%;
+	}
+	.m-i-btn > button {
+        border-color: var(--subMain);
+	}
+}
